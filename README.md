@@ -11,7 +11,7 @@ serve ./foobar // serves the files in `foobar` directory
 
 If you do not want to open browser by default, you can use `-s` flag.
 
-You can serve on a specified local IP as `serve -a=127.0.0.1:8000`
+You can serve on a specific local IP as `serve -a=127.0.0.1:8000`
 
 ## Build from source
 
