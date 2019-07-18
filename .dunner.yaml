@@ -4,3 +4,6 @@ go-rpm-build:
     - ["goreleaser", "release", "--rm-dist"]
     mounts:
     - ".:/app"
+    envs:
+    - GITHUB_TOKEN=`$GITHUB_TOKEN`
+
