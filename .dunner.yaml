@@ -1,0 +1,6 @@
+go-rpm-build: 
+  - image: apoorvam6/go-rpm-release
+    commands:
+    - ["goreleaser", "release", "--skip-publish"]
+    mounts:
+    - ".:/app"

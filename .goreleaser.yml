@@ -1,0 +1,19 @@
+project_name: serve
+
+builds:
+- goos:
+    - linux
+  goarch:
+    - 386
+    - amd64
+    - arm
+    - arm64
+
+nfpm:
+  name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+  homepage:  https://github.com/apoorvam/serve
+  description: A simple Web Server to serve your static files on a URL
+  maintainer: Apoorva Manjunath
+  license: MIT
+  formats:
+  - rpm
